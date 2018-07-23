@@ -6,9 +6,11 @@ import { IProduct } from './products.model';
 })
 
 export class ProductValueFilter implements PipeTransform {
-    transform(value:IProduct[], filterBy: string){
+    transform(value: IProduct[], filterBy: string) {
         filterBy = filterBy ? filterBy.toLowerCase() : null;
         return filterBy ? value.filter((product : IProduct) => 
-            product.name.toLowerCase().indexOf(filterBy) !== -1): value;
+        //product.name.toLowerCase().indexOf(filterBy) !== -1) : value;
+        product.type.toLowerCase().indexOf(filterBy) !== -1) : value;
+
         }
     }

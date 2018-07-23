@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from './products.model';
 
 @Component({
     selector: 'app-product',
@@ -10,8 +11,8 @@ export class ProductComponent {
     title: String = '*****Movie List******';
     showTable: Boolean = true;
     showImage: Boolean = false;
-    filterText: String = '';
-    products: any[] = [
+    filterText: String;
+    products: IProduct[] = [
     
         {"_id":"5ab12612f36d2879268f284a",
         "name":"Black Panther",

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard.component';
 import { ProductComponent } from './products/products.component';
 import { UpperPipe } from './products/myUpper.pipe';
+import { ProductValueFilter } from './products/product-filter.pipe';
 
 @NgModule({
     // All Component come here
@@ -13,7 +14,8 @@ import { UpperPipe } from './products/myUpper.pipe';
         AppComponent,
         DashboardComponent,
         ProductComponent,
-        UpperPipe
+        UpperPipe,
+        ProductValueFilter
      ],
      // All Modules will declare here
     imports: [
